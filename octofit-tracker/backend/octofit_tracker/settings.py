@@ -131,3 +131,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Enable CORS for all origins
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Codespace Django REST API endpoint suffix
+API_ENDPOINT_SUFFIX = '/api/'
