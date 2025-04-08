@@ -26,10 +26,11 @@ class WorkoutViewSet(ModelViewSet):
 
 @api_view(['GET'])
 def api_root(request, format=None):
+    base_url = 'https://fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev/'
     return Response({
-        'users': 'https://fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev/api/users/',
-        'teams': 'https://fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev/api/teams/',
-        'activities': 'https://fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev/api/activities/',
-        'leaderboard': 'https://fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev/api/leaderboard/',
-        'workouts': 'https://fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev/api/workouts/',
+        'users': base_url + 'api/users/',
+        'teams': base_url + 'api/teams/',
+        'activities': base_url + 'api/activities/',
+        'leaderboard': base_url + 'api/leaderboard/',
+        'workouts': base_url + 'api/workouts/',
     })

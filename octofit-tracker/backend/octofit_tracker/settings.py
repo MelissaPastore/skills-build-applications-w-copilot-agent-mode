@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-(ff#0#%qr$$t^2ohh%@kuj7jzq@-a9d_^fw%4oqz(9(g+wh@-!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fluffy-palm-tree-wx7px7pwvp6f5xpj-8000.app.github.dev']
 
 
 # Application definition
@@ -131,6 +131,3 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Enable CORS for all origins
 CORS_ALLOW_ALL_ORIGINS = True
-
-# Codespace Django REST API endpoint suffix
-API_ENDPOINT_SUFFIX = '/api/'
